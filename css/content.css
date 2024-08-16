@@ -87,6 +87,84 @@ h2
     color: white;
 }
 
+.tryme{
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(69, 0, 0);
+    color: aliceblue;
+    font-size: medium;
+}
+
+.productintryme{
+    height: 700px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 220px;
+}
+
+.detes2{
+    align-items: start;
+    padding-bottom: 270px;
+}
+
+.detes{
+    height: 300px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+}
+
+.detes h1{
+    height: 80px;
+    width: 500px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.detes h2{
+    height: 80px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.detes h3{
+    height: 10px;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.productintryme button{
+    height: 70px;
+    z-index: 100;
+    width: 300px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(69, 0, 0);
+    color: aliceblue;
+    font-size: medium;
+    padding-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 60px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
 @media(max-width: 1070px)

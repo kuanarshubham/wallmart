@@ -67,12 +67,12 @@ httpRequest.onreadystatechange = function() {
       }
       for (let i = 0; i < contentTitle.length; i++) {
         if (contentTitle[i].isAccessory) {
-          console.log(contentTitle[i]);
+          //console.log(contentTitle[i]);
           containerAccessories.appendChild(
             dynamicClothingSection(contentTitle[i])
           );
         } else {
-          console.log(contentTitle[i]);
+          //console.log(contentTitle[i]);
           containerClothing.appendChild(
             dynamicClothingSection(contentTitle[i])
           );
@@ -89,3 +89,34 @@ httpRequest.open(
   true
 );
 httpRequest.send();
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const fileInput = document.getElementById('file');
+  const uploadButton = document.getElementById('uploadButton');
+
+  uploadButton.addEventListener('click', () => {
+    const file = fileInput.files[0];
+
+    if (file) {
+      if (file.type.startsWith('image/')) {
+        //console.log('File information:', file);
+        window.location.href = "description.html"
+      } else {
+        message.textContent = 'Please upload a valid image file.';
+      }
+    } else {
+      message.textContent = 'No file selected. Please upload an image file.';
+    }
+  });
+});
+
+const submitButtonInDescription = document.getElementById('btn btn-outline-primary mt-3');
+
+document.addEventListener('DOMContentLoaded', () => {
+  const submitButtonInDescription = document.querySelector('.btn-outline-primary');
+  console.log(submitButtonInDescription)
+  submitButtonInDescription.addEventListener('click', () => {
+    window.location.href = "result.html";
+  });
+});

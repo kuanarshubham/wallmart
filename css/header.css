@@ -19,9 +19,7 @@ body
     margin: auto;
     text-align: center;
     width: 100%;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1.5fr 1.5fr 5fr 1fr;
+    display: flex;
     font-family: 'Lato', sans-serif;
     z-index: 1;
     justify-content: space-between;
@@ -105,6 +103,21 @@ body
 #user a
 {
     color: rgb(29, 29, 29)
+}
+
+.lense{
+    height:43.59px;
+    width: 45px;
+    font-size: 43.59px;
+    padding-right: 10px;
+}
+
+.lense a i{
+    color: black;
+}
+
+.lense input{
+    display: none;
 }
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
